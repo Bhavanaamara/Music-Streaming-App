@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming App</title>
+    <link rel="stylesheet" href="Music Streaming App.css">
+</head>
+<body>  
+    <h1>Musical Melodies</h1>
+    <div class="container">
+        <div class="music-player">
+            <div class="album-art">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjRkM2JjYWEtNDhiMi00NzJmLTljMjktZTAxZWQ5ZTZkNzNmXkEyXkFqcGdeQXVyMTIwNDYzMjIz._V1_.jpg" alt="Album Cover">
+                <!-- Placeholder for album art -->
+            </div>
+            <div class="song-info">
+                <h2 id="song-title">middle-class melodies</h2>
+                <h3 id="artist">Sweeker Agasthi</h3>
+            </div>
+            <audio id="audio" controls>
+                <source src="c:\Users\Lenovo\Downloads\[iSongs.info] 01 - The Guntur Song.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="controls">
+                <button class="prev-btn">Prev</button>
+                <button class="play-btn">Play</button>
+                <button class="next-btn">Next</button>
+            </div><br><br>
+            <hr><br><br>
+
+            <div class="album-art">
+                <img src="https://images.hungama.com/c/1/91b/ad2/84647323/84647323_300x300.jpg" alt="Album Cover">
+                <!-- Placeholder for album art -->
+            </div>
+            <div class="song-info">
+                <h2 id="song-title">Guntur Mirapakai</h2>
+                <h3 id="artist">Geetha Madhuri </h3>
+            </div>
+            <audio id="audio" controls>
+                <source src="c:\Users\Lenovo\Downloads\[iSongs.info] 03 - Guntur Mirapakai.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <div class="controls">
+                <button class="prev-btn">Prev</button>
+                <button class="play-btn">Play</button>
+                <button class="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+                <li onclick="playSong('song1.mp3')">Song 1</li>
+                <li onclick="playSong('song2.mp3')">Song 2</li>
+                <li onclick="playSong('song3.mp3')">Song 3</li>
+                <!-- Add more songs -->
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="Music Streaming App.js"></script>
+</body>
+</html>
